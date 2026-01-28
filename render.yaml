@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: handwriting-ml-api
-    env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn app:app --preload"
-    plan: free
-    autoDeploy: true
